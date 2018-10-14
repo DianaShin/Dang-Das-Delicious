@@ -1,0 +1,24 @@
+//- if you leave the element type out(and just write .class), pug will always assume it is a div 
+//- you can also use JS in pug. Just put a '-' in the front of the line 
+//- you can overwrite the default content of a block in a layout by adding the content beneath the block
+
+extends layout
+block content
+  - const upDog = dog.toUpperCase();
+  div.wrapper
+    h1.title Hello, pug!! My name is #{name} and my hobby is #{hobby}
+    h2.title Hello, pug!! My name is #{name} and my friend's dog is #{dog.toUpperCase()}
+    h2.sale Sale ends in #{h.moment().endOf('day').fromNow()}
+    p.sentence this is a sentence.
+    span#indent bad indentation kills
+    img.dog(src="dog.jpg" alt=`Dog ${upDog}`)
+      //- attributes go inside parantheses and to interpolate variables in attributes you must use JS (ES6 template literals) 
+    ul.list
+      li.item item 1
+      li item 2
+      li item 3
+    
+    h2
+      | Hello
+      br
+      em How are you?

@@ -1,0 +1,10 @@
+extends layout 
+
+include mixins/_storeForm
+//- importing the mixin: this makes all the mixins defined in the above file as javascript functions
+
+block content 
+  .inner 
+    h2 #{title}
+    //- h2= title (equivalent to the above - it will interpolate the variable)
+    +storeForm(store)
