@@ -1,27 +1,5 @@
-## What is this?
+#Dang Das Delicious
 
-Just you wait folks!
+## [live link](https://dang-das-delicious-xnkwjnkixf.now.sh/)
 
-## Sample Data
-
-To load sample data, run the following command in your terminal:
-
-```bash
-npm run sample
-```
-
-If you have previously loaded in this data, you can wipe your database 100% clean with:
-
-```bash
-npm run blowitallaway
-```
-
-That will populate 16 stores with 3 authors and 41 reviews. The logins for the authors are as follows:
-
-|Name|Email (login)|Password|
-|---|---|---|
-|Wes Bos|wes@example.com|wes|
-|Debbie Downer|debbie@example.com|debbie|
-|Beau|beau@example.com|beau|
-
-
+This is the end result of following Wes Bos' [Learn Node](https://learnnode.com/). I had fun building this app. I would recommend the course for anyone trying to gain familiarity with Node and the Express framework, pug templating, MongoDB set-up and advanced aggregation mongoose.
